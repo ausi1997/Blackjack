@@ -1,0 +1,238 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#background {
+    margin: 0;
+    padding: 0;
+    min-height: 700px;
+    background-color: peru;
+
+}
+#instruction{
+    width: 230px;
+    height: 300px;
+    background-color: saddlebrown;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 50px;   
+}
+#instruction .info{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 20px;
+    word-spacing: 2px;
+}
+ h3{
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    margin-top:1px;
+    color: rgb(14, 13, 13);
+}
+
+#rules{
+    width: 230px;
+    height: 250px;
+    background-color: saddlebrown;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+#rules p{
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    word-spacing: 2px;
+}
+#gamepanel{
+    width: 800px;
+    min-height: 550px;
+    background-color: seagreen;
+    float: right;
+    margin-right: 150px;
+    margin-top: 50px;
+    border: 10px solid rgb(30, 87, 87);
+    border-radius:20px;
+    animation: anim3 2s infinite alternate;
+}
+#gamepanel h1{
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px;
+    animation: anim 2s infinite alternate;
+}
+#gamepanel h4{
+    margin: 0;
+    margin-left: 35px;
+    font-style: italic;
+    color: rgb(14, 13, 13);
+    font-size: xx-large;
+    animation: anim 2s infinite alternate;
+}
+#deck{
+    width: 100px;
+    height: 150px;
+    background-color: darksalmon;
+    margin-left: 30px;
+    border-radius: 10px;
+    margin-top:0;
+    box-shadow:2px 2px 3px 3px rgb(14, 13, 13);
+}
+ #deckcount{
+    margin: 0;
+    text-align: center;
+    padding-top:52px;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: rgb(14, 13, 13);
+    animation: anim2 2s infinite alternate;
+   }
+   #gamepanel #options{
+       float: right;
+     text-align: center;
+     margin-right: 10px;
+     margin-top: -170px;
+   }
+   .btn{
+       width: 90px;
+       height: 30px;
+       padding: 5px;
+       border-radius: 8px;
+       background-color: darkslategray;
+       font-size: 15px;
+       font-style: italic;
+       cursor: pointer;
+   }
+   #btnStart{
+       margin-right: 20px;
+   }
+   #btnstay{
+       margin-left: 20px;
+       margin-right: 80px;
+   }
+   #btntwo{
+    width: 120px;
+   }
+   #btnthree{
+    width: 120px;
+   }
+
+   
+   #players{
+    width: 500px;
+margin:auto;
+text-align: center;
+}
+
+#players .player{
+ width: 40%;
+ min-height: 150px;
+ border: solid 5px #181717;
+ border-radius: 10px;
+ padding: 10px;
+ display: inline-block;
+ margin:5px;
+ vertical-align: top;
+ background:#599496;
+}
+.card{
+    width: 50px;
+    height: 80px;
+    padding: 10px;
+    background-color: darksalmon;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    margin: 3px;
+    border:solid 3px;
+}
+.points{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.playerid{
+    font-weight: bold;
+    font-size: 20px;
+}
+.status
+{
+    display:inline-block;
+background: rgb(71, 133, 151);
+border: solid 3px rgb(14, 13, 13);
+border-radius: 10px;
+padding: 5px 20px;
+margin-left:300px;
+font-weight: bolder;
+display:none;
+}
+
+@media(max-width:1100px){
+    #instruction{
+        width: 194px;
+    }
+    }
+    @media(max-width:1100px){
+        #instruction .info{
+            word-spacing: 1px;
+        }
+        }
+    @media(max-width:1100px){
+        #rules{
+            width: 194px;
+        }
+        }
+        @media(max-width:1100px){
+            #rules p{
+                word-spacing: 0px;
+            }
+            }
+        @media(max-width:1100px){
+            #gamepanel{
+                width: 640px;
+            }
+            }
+            @media(max-width:1100px){
+                .btn{
+                    width: 72px;
+                }
+                }
+                @media(max-width:1100px){
+                    #deck{
+                        width: 70px;
+                    }
+                    }
+                    @media(max-width:1100px){
+                        #players{
+                            width: 400px;
+                        }
+                        }
+                        @media(max-width:1100px){
+                            #gamepanel #options{
+                                width: 530px;
+                            }
+                            }
+                            @media(max-width:1100px){
+                                #gamepanel h4{
+                                    font-size:small ;
+                                }
+                                }
+  @keyframes anim{
+      0%{font-style:italic;}
+      100%{font-style:italic;color:rgb(141, 90, 47);}
+  }   
+  @keyframes anim2{
+      0%{font-size: xx-large;}
+      100%{font-size: large;}
+  }     
+  @keyframes anim3{
+      0%{border-radius: 20px;}
+      100%{border-radius: 60px;}
+
+      
+  }                      

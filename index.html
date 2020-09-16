@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BlackJack</title>
+        <link href="game.css" rel="stylesheet">
+       
+    </head>
+    <body>
+        <div id="background">
+            <div id="gamepanel">
+                <h1>Blackjack</h1>
+                <h4>Deck</h4>
+                <div id="deck">
+                    <div id="deckcount">52</div>
+                </div>
+                <div id="options">
+                    <input type="button" id="btnStart" class="btn" value="Start" onclick="startblackjack()">
+                    <input type="button" id="btnhit" class="btn" value="Hit me" onclick="hitMe()">
+                    <input type="button" id="btnstay" class="btn" value="Stay" onclick="stay()">
+                    <input type="button" id="btntwo" class="btn" value="Two Players" onclick="createPlayers(2)">
+                    <input type="button" id="btnthree" class="btn" value="Three Players" onclick="createPlayers(3)">
+                    </div>
+                    <div class="status" id="status"></div>
+                    <div id="players" class="players"></div>
+                    <div class="clear"></div>
+                </div>
+            <div id="instruction">
+                <h3>Instruction<hr></h3>
+                <p class="info">Hello!<br/><br>
+                    To Start First Choose no. of Player<br/><br>
+                    To take one more one card click on Hit Me..<br><br>
+                    To take the chance click on Stay...
+
+                </p>
+            </div>
+            <div id="rules">
+                <h3>Rules<hr>
+                </h3>
+                <p>Players are dealt with a starting hand of 2 cards with the hopes of getting the magical no. of
+                    21, or to get as close to 21 as possible.If a player gets 21 on his initial hand,it is called "blackjack"
+                    The other ways to win are to hold a higher sum of cards at the end of the play than the other player.
+                 </p>
+            </div>
+        </div>
+        <script src="game.js" async defer></script>
+    </body>
+</html>
